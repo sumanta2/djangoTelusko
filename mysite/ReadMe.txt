@@ -10,7 +10,8 @@ or
 pip freeze >.\requirements.txt 
 for put all pip packages name with version in requirements.txt file
 
-environment folder present inide the main file as a sibling of requirements.txt file
+create environment variable folder using this command 'python -m virtualenv myenv
+environment folder present inside the main file as a sibling of requirements.txt file
 
 required pip package::
 
