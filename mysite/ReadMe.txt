@@ -25,4 +25,4 @@ typing_extensions==4.1.1
 
 this django code are do following Telusko Youtube channel
 
-video completed:7th
+video completed:8th
