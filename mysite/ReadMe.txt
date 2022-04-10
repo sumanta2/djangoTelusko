@@ -31,7 +31,11 @@ typing_extensions==4.1.1
 
 this django code are do following Telusko Youtube channel
 
-video complete :11th
+video complete :12th
 
 
 to solve the problem and properly make app(separate project component in django): https://youtu.be/L7D50lzcG5s
+
+inside parent mysite folder create a folder name static where i store all image css file and js file need our website
+
+for import external css file link or js file link we need to use {% <folderName> <rest url> %} this type pattern but in case of image we directly add folderName to the rest url like add parent folder to a file name
