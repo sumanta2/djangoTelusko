@@ -17,7 +17,7 @@ pip install -r .\requirements.txt install all packages mention in requirements.t
 
 inbuilt theme used by telusko download from following url https://github.com/sahaib9747/TeluskoTutorial-TravelloTheme
 
-copy manage.py file from mysite folder to DJANGOTELUSKO folder and then run python manage.py sartapp travello in DJANGOTELUSKO directory to create a new propject inside DJANGOTELUSKO directory
+copy manage.py file from mysite folder to DJANGOTELUSKO folder and then run python manage.py startapp travello in DJANGOTELUSKO directory to create a new project inside DJANGOTELUSKO directory
 
 required pip package::
 
@@ -31,7 +31,7 @@ typing_extensions==4.1.1
 
 this django code are do following Telusko Youtube channel
 
-video complete :12th
+video complete :12th original
 
 
 to solve the problem and properly make app(separate project component in django): https://youtu.be/L7D50lzcG5s
