@@ -31,7 +31,7 @@ typing_extensions==4.1.1
 
 this django code are do following Telusko Youtube channel
 
-video complete :13th original
+video complete :14th original
 
 
 to solve the problem and properly make app(separate project component in django): https://youtu.be/L7D50lzcG5s

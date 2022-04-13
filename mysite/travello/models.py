@@ -8,3 +8,4 @@ class Destination:
     name:str
     img:str
     price:int
+    offer:bool
