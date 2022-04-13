@@ -1,4 +1,5 @@
 {% load static %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -265,6 +266,8 @@
 
 		<!-- Destinations -->
 
+		
+
 		<div class="destinations" id="destinations">
 			<div class="container">
 				<div class="row">
@@ -279,25 +282,26 @@
 					<div class="col">
 						<div class="destinations_container item_grid">
 
-	
+							{% for dest in dests %}
 							<!-- Destination -->
 							<div class="destination item">
 								<div class="destination_image">
-									<img src="static/images/destination_4.jpg" alt="image">
+									<img src="{{baseUrl}}/{{dest.img}}" alt="image">
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 								</div>
 								<div class="destination_content">
-									<div class="destination_title"><a href="destinations.html">Mumbai</a>
+									<div class="destination_title"><a href="destinations.html">{{ dest.name }}</a>
+										
 									</div>
 									<div class="destination_subtitle">
-										<p>The city never sleeps </p>
+										<p>{{dest.desc}}</p>
 									</div>
-									<div class="destination_price">From $1000</div>
+									<div class="destination_price">From ${{dest.price}}</div>
 								</div>
 							</div>
+							{% endfor %}
 
-
-							<div class="destination item">
+							<!-- <div class="destination item">
 								<div class="destination_image">
 									<img src="static/images/destination_1.jpg" alt="image">
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
@@ -310,10 +314,10 @@
 									</div>
 									<div class="destination_price">From $650</div>
 								</div>
-							</div>
+							</div> -->
 
 
-							<div class="destination item">
+							<!-- <div class="destination item">
 								<div class="destination_image">
 									<img src="static/images/destination_3.jpg" alt="image">
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
@@ -326,7 +330,7 @@
 									</div>
 									<div class="destination_price">From $100</div>
 								</div>
-							</div>
+							</div> -->
 
 
 						</div>
