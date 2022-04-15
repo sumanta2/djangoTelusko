@@ -31,7 +31,7 @@ typing_extensions==4.1.1
 
 this django code are do following Telusko Youtube channel
 
-video complete :14th original
+video complete :17,18th 
 
 
 to solve the problem and properly make app(separate project component in django): https://youtu.be/L7D50lzcG5s
@@ -39,3 +39,19 @@ to solve the problem and properly make app(separate project component in django)
 inside parent mysite folder create a folder name static where i store all image css file and js file need our website
 
 for import external css file link or js file link we need to use {% <folderName> <rest url> %} this type pattern but in case of image we directly add folderName to the rest url like add parent folder to a file name
+
+-------------------------------------------------------------------------------model create and migration
+
+install python package psycopg2(pip install psycopg2) it help to connect django to postgreSql database 
+install pillow package(pip install pillow) which need to migrate django model
+to migrate django model need execute this command python manage.py makemigrations in cmd after migration complete where the schema generated the file location is display in the cmd with filename
+
+and then run the python manage.py sqlmigrate travello 0001 command that create a sql querry based on the python model created and 0001 indicate the file name where the django orm model are store 
+
+then run following commant python manage.py migrate it actually execute the sql command in postgreSql database 
+
+
+
+see all table in postGreSql database through pgAdmin  Schemas => public => Tables
+
+
