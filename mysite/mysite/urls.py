@@ -22,6 +22,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('travello.urls'), name='index'),
+    path('accounts/',include('accounts.urls')),
     path('oldindex',views.index,name='indexOld'),
     path('rm', views.renderMe, name='rm'),
     path('add', views.add, name='add'),
