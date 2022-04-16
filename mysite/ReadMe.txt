@@ -54,4 +54,17 @@ then run following commant python manage.py migrate it actually execute the sql 
 
 see all table in postGreSql database through pgAdmin  Schemas => public => Tables
 
+python manage.py help it help which command are available in manage.py file
+
+for create super user:: python manage.py createsuperuser run this command in cmd
+
+username :kiran
+email: sumantagorai.21@gmail.com
+password:1234                     provide when create super user
+
+after creating superuser we need to go http://127.0.0.1:8000/admin/ url where we need to provide superuser's userName and password to enter in admin panel from where we easily control any website
+
+then we need to register our model(which created in models.py file in travello folder) in admin.py file inside travello folder and automatically django provide a webpage layout based on the register model
+
+
 
