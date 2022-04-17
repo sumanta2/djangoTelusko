@@ -4,6 +4,10 @@ from django.contrib import messages
 
 # Create your views here.
 
+def logout(request):
+    auth.logout(request)  #it automatically perform logout operation from the browser
+    return redirect('/')
+
 def login(request):
     if request.method == "GET":
         return render(request,'login.html')

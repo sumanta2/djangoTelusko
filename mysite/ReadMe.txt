@@ -31,7 +31,7 @@ typing_extensions==4.1.1
 
 this django code are do following Telusko Youtube channel
 
-video complete :24th 
+video complete :25th 
 
 
 to solve the problem and properly make app(separate project component in django): https://youtu.be/L7D50lzcG5s
@@ -53,6 +53,8 @@ then run following commant python manage.py migrate it actually execute the sql 
 
 
 see all table in postGreSql database through pgAdmin  Schemas => public => Tables
+
+Schemas => public => Tables => auth_user table store all register ed or login user data
 
 python manage.py help it help which command are available in manage.py file
 
